@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Healing Hands</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="prices.js" defer></script>
+
+    </head>
+    <body>
+        <header class="main-header container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Healing Hands Logo" class="logo-img">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="prices.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="prices-body">
+            <section class="page-header">
+                <div class="container prices-header">
+                    <h1>Our Prices</h1>
+                    <p>Transparent prices for quality medical services</p>
+                </div>
+            </section>
+            <section class="pricing-section">
+                <div class="container">
+                    <div class="pricing-info">
+                        <p><strong>New Clients </strong>get a 10% discount on your first consultation!</p>
+                    </div>
+                    <div class="price-calculator">
+                        <h2>Total price</h2>
+                        <div class="calculator-form">
+                            <label for="doctorSelect"> Choose your doctor:</label>
+                            <select id="doctorSelect">
+                                <option value="">--Choose a doctor</option>
+                            </select>
+    
+                            <label for="serviceSelect"> Choose your service:</label>
+                            <select id="serviceSelect">
+                                <option value="">--Choose a service</option>
+                            </select>
+    
+                            <label>
+                                <input type="checkbox" id="newClient">
+                                I'm a new client(10% off)
+                            </label>
+    
+                            <button onclick="calculateTotal()">Calculate Price</button>
+                            <div id="result" class="calc-result"></div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="doctors-pricing" id="doctorsPricing">
+    
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Healing Hands</h3>
+                        <p>Skilled Hands, Caring Hearts</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <p><a href="mailto:contact@healinghands.ro">contact@healinghands.ro</a></p>
+                        <p><a href="tel:+40712568419"></a>+40712568419</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Program</h3>
+                        <p>Monday - Friday : 08:00 - 20:00</p>
+                        <p>Saturday : 09:00 - 18:00</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Healing Hands. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

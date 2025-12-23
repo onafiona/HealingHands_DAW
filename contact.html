@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Healing Hands</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+
+    </head>
+    <body>
+        <header class="main-header container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Healing Hands Logo" class="logo-img">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="prices.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contact-body">
+            <section class="page-header">
+                <div class="container contact-header">
+                    <h1>Contact Us</h1>
+                    <p>Your health matters to us. Book your consultation today!</p>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-form-container">
+                            <h2>Send us a message</h2>
+                            <form class="contact-form" action="mailto:farcas.oana99@gmail.com">
+                                <div class="form-group">
+                                    <label for="name">Full Name:</label>
+                                    <input type="text" id="name" placeholder="Enter your full name">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" placeholder="Enter your email">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Phone Number:</label>
+                                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message:</label>
+                                    <textarea id="message" rows="5" placeholder="Enter your message"></textarea>
+                                </div>
+
+                                <button onclick="submitForm()">Send Message</button>
+                                <div id="formMessage"></div>
+                            </form>
+                        </div>
+                        <div class="map-container">
+                            <h2>Where you'll find us:</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12362.46531657593!2d24.558249974829113!3d46.54692433779444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474bb799a95cb031%3A0xfb6a4dcbb86689ce!2sFacultatea%20de%20Inginerie%20%C8%99i%20Tehnologia%20Informa%C8%9Biei-%20UMFST%20%22G.%20E.%20Palade%22!5e1!3m2!1sro!2sro!4v1766477361174!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Healing Hands</h3>
+                        <p>Skilled Hands, Caring Hearts</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <p><a href="mailto:contact@healinghands.ro">contact@healinghands.ro</a></p>
+                        <p><a href="tel:+40712568419"></a>+40712568419</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Program</h3>
+                        <p>Monday - Friday : 08:00 - 20:00</p>
+                        <p>Saturday : 09:00 - 18:00</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Healing Hands. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
